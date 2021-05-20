@@ -47,18 +47,32 @@ img:hover {
 }
 
 .column {
-  width: 100%;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  height: 600px;
+  align-items: center;
 }
 
+
 .small {
-  
+  width: 98%;
+  height: auto;
+  grid-column: span 1;
+  grid-row: span 1;
 }
 
 .med {
- 
+  width: 98%;
+  height: auto;
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .large {
-  
+  width: 98%;
+  height: auto;
+  grid-column: span 3;
+  grid-row: span 3;
 }
